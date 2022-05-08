@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/abuk111/3-column-preview-card-component-main)
+- Live Site URL: [click!](https://abuk111.github.io/3-column-preview-card-component-main/index.html)
 
 ## My process
 
