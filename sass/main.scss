@@ -1,0 +1,127 @@
+@import './colors';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-size: 1.5rem;
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+// heading
+h1 {
+	top: 2rem;
+	text-align: center;
+	font-size: 3rem;
+}
+
+//component
+
+.cardbox {
+	display: flex;
+	flex-direction: column;
+	margin: 1.6em;
+	border-radius: 0.5em;
+	overflow: hidden;
+
+	&__card {
+		padding: 3.2em;
+
+		img {
+			height: 2.4em;
+		}
+
+		&-text {
+			margin: 2.8em 0 2em 0;
+
+			h2 {
+				margin-bottom: 0.5em;
+				font-family: 'Big Shoulders Display', cursive;
+				color: $verylightgray;
+				font-size: 4rem;
+				text-transform: uppercase;
+			}
+
+			p {
+				font-size: 1.6rem;
+				line-height: 1.5em;
+				color: $transparentwhite;
+			}
+		}
+
+		.button {
+			padding: 1em 2em;
+			font-size: 1.5rem;
+			color: transparent;
+			background-color: $verylightgray;
+			border: 2px solid transparent;
+			border-radius: 3em;
+			cursor: pointer;
+
+			&--sedan {
+				color: $brightorange;
+			}
+			&--suvs {
+				color: $darkcyan;
+			}
+			&--luxury {
+				color: $verydarkcyan;
+			}
+
+			&:hover {
+				color: $verylightgray;
+				background-color: transparent;
+				border: 2px solid $verylightgray;
+			}
+		}
+
+		&--sedan {
+			background-color: $brightorange;
+		}
+		&--suvs {
+			background-color: $darkcyan;
+		}
+		&--luxury {
+			background-color: $verydarkcyan;
+		}
+	}
+}
+
+// atribution
+.attribution {
+	margin-bottom: 0.5em;
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+// MEDIA QUERIES
+
+@media (min-width: 573px) {
+	.cardbox {
+		flex-direction: row;
+		max-width: 925px;
+
+		&__card {
+			&-text {
+				margin-bottom: 5.6em;
+			}
+		}
+	}
+}

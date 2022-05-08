@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+h1 {
+  top: 2rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.cardbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1.6em;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+.cardbox__card {
+  padding: 3.2em;
+}
+
+.cardbox__card img {
+  height: 2.4em;
+}
+
+.cardbox__card-text {
+  margin: 2.8em 0 2em 0;
+}
+
+.cardbox__card-text h2 {
+  margin-bottom: 0.5em;
+  font-family: 'Big Shoulders Display', cursive;
+  color: #f2f2f2;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.cardbox__card-text p {
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.cardbox__card .button {
+  padding: 1em 2em;
+  font-size: 1.5rem;
+  color: transparent;
+  background-color: #f2f2f2;
+  border: 2px solid transparent;
+  border-radius: 3em;
+  cursor: pointer;
+}
+
+.cardbox__card .button--sedan {
+  color: #e38826;
+}
+
+.cardbox__card .button--suvs {
+  color: #006970;
+}
+
+.cardbox__card .button--luxury {
+  color: #004241;
+}
+
+.cardbox__card .button:hover {
+  color: #f2f2f2;
+  background-color: transparent;
+  border: 2px solid #f2f2f2;
+}
+
+.cardbox__card--sedan {
+  background-color: #e38826;
+}
+
+.cardbox__card--suvs {
+  background-color: #006970;
+}
+
+.cardbox__card--luxury {
+  background-color: #004241;
+}
+
+.attribution {
+  margin-bottom: 0.5em;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (min-width: 573px) {
+  .cardbox {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 925px;
+  }
+  .cardbox__card-text {
+    margin-bottom: 5.6em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
